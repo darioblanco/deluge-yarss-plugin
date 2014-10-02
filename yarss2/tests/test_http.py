@@ -45,7 +45,7 @@ class HTTPTestCase(unittest.TestCase):
         pass
 
     def test_encode_cookie_values(self):
-        expected = "key3=value3; key2=value2; key1=value1"
+        expected = "key1=value1; key2=value2; key3=value3"
         cookie_pairs = {}
         cookie_pairs["key1"] = "value1"
         cookie_pairs["key2"] = "value2"
@@ -62,7 +62,7 @@ class HTTPTestCase(unittest.TestCase):
                         "value": {"key3": "value3", "key4": "value4"}}
         cookies["2"] = {"active": False, "site": "basename.com",
                         "value": {"key5": "value5", "key6": "value6"}}
-        expected_cookie = "key2=value2; key1=value1"
+        expected_cookie = "key1=value1; key2=value2"
         header = http.get_cookie_header(cookies, url)
         self.assertTrue(header.has_key("Cookie"))
         self.assertEquals(header["Cookie"], expected_cookie)

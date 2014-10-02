@@ -111,7 +111,7 @@ class RSSFeedScheduler(object):
         try:
             return self.rssfeed_update_handler(rssfeed_key=rssfeed_key, subscription_key=subscription_key)
         except:
-            traceback.print_exc()
+            #traceback.print_exc()
             exc_str = traceback.format_exc()
             self.log.warn("An exception was thrown by the RSS update handler. Please report this bug!\n%s" % exc_str)
 

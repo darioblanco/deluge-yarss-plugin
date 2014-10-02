@@ -1,0 +1,7 @@
+twisted
+service_identity
+mako
+chardet
+pyopenssl
+pyxdg
+pytest

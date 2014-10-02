@@ -57,9 +57,9 @@ import yarss2.gtkui.dialog_subscription
 import deluge.ui.client
 from deluge.ui.client import Client
 
-from yarss2.gtkui.dialog_subscription import DialogSubscription
 from yarss2.util.logger import Logger
 
+from yarss2.gtkui.dialog_subscription import DialogSubscription
 
 import deluge.configmanager
 import time
@@ -68,11 +68,11 @@ class DialogSubscriptionTestCase(unittest.TestCase):
 
     def setUp(self):
         self.log = Logger()
-        deluge.ui.client.client = Client()
         self.client = deluge.ui.client.client
         self.client.start_classic_mode()
 
     def tearDown(self):
+        self.client.disconnect()
         d = component.shutdown()
         # Components aren't removed from registry in component.shutdown...
         # so must do that manually
@@ -92,6 +92,7 @@ class DialogSubscriptionTestCase(unittest.TestCase):
         return defered
 
     def test_select_rssfeed_with_search(self):
+        #print "test_select_rssfeed_with_search, self.client:", self.client
         subscription_config = yarss_config.get_fresh_subscription_config()
         search_regex = "bootonly"
         expected_match_count = 6
