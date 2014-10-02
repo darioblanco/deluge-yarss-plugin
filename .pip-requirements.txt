@@ -6,3 +6,4 @@ chardet
 pyopenssl
 pyxdg
 pytest
+termcolor
