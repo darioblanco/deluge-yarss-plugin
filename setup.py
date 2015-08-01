@@ -1,7 +1,7 @@
 #
 # setup.py
 #
-# Copyright (C) 2015 Darío Blanco
+# Copyright (C) 2015 Dario Blanco
 #
 # Based on work by:
 # Copyright (C) 2013-2014 Bro <bro.development@gmail.com>
@@ -44,7 +44,7 @@
 from setuptools import setup, find_packages
 
 __plugin_name__ = "YaRSS2"
-__author__ = "Darío Blanco"
+__author__ = "Dario Blanco"
 __author_email__ = "dario@darioblanco.com"
 __version__ = "1.3.4"
 __url__ = "http://dev.deluge-torrent.org/wiki/Plugins/YaRSS2"
