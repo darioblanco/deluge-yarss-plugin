@@ -1,8 +1,17 @@
 ## YaRSS2 : Yet another RSS 2, a RSS plugin for Deluge ##
 
-Author: Bro <bro.development@gmail.com>
+Forked from https://bitbucket.org/bendikro/deluge-yarss-plugin/downloads
 
-Based on YaRSS by Camillo Dell'mour
+My motivation for that fork is addressing the urllib3 issues that this plugin has, as the urllib3 package is inside the repo, and has to be updated in order to support connections to servers discarding old ciphers, like the ones using Cloudflare's default SSL certificate.
+
+As the project seems abandoned, I would like to address any further issues from now on.
+
+Author -  Darío Blanco <dario@darioblanco.com>
+
+Original Authors
+
+Bro <bro.development@gmail.com>
+Camillo Dell'mour <cdellmour@gmail.com>
 
 License: GPLv3
 
@@ -37,6 +46,10 @@ yarss2$ trial tests
 
 
 ## Changelog ##
+
+v1.3.4 - 2015-08-01
+
+* Updated urllib3 package
 
 v1.3.3 - 2014-07-25
 
