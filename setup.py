@@ -1,9 +1,10 @@
 #
 # setup.py
 #
-# Copyright (C) 2013-2014 Bro
+# Copyright (C) 2015 Darío Blanco
 #
 # Based on work by:
+# Copyright (C) 2013-2014 Bro <bro.development@gmail.com>
 # Copyright (C) 2009 Camillo Dell'mour <cdellmour@gmail.com>
 #
 # Basic plugin template created by:
@@ -43,16 +44,17 @@
 from setuptools import setup, find_packages
 
 __plugin_name__ = "YaRSS2"
-__author__ = "Bro"
-__author_email__ = "bro.development@gmail.com"
-__version__ = "1.3.3"
+__author__ = "Darío Blanco"
+__author_email__ = "dario@darioblanco.com"
+__version__ = "1.3.4"
 __url__ = "http://dev.deluge-torrent.org/wiki/Plugins/YaRSS2"
 __license__ = "GPLv3"
 __description__ = "Yet another RSS 2"
 __long_description__ = """
-Yet another RSS 2, a simple RSS plugin for Deluge, based on
+Yet another RSS 2, a simple RSS plugin for Deluge, forked from
+Bro <bro.development@gmail.com> who based his work on
 YaRSS written by Camillo Dell'mour <cdellmour@gmail.com>.
-Last updated on 2014-7-25, tested with Deluge 1.3.7.
+Last updated on 2015-8-01, tested with Deluge 1.3.10.
 Requires PyGTK 2.24
 """
 
